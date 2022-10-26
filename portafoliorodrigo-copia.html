@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="icon" href="img/logo portafolio.png" type="image/png" />
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <script src="https://kit.fontawesome.com/25098f9fce.js" crossorigin="anonymous"></script>
+
+    <!-- <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="./vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="./vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="./vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="./vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="./vendor/aos/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles-portfolio.css">
+    <link href="css/styleninestar.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+</head>
+
+
+
+
+<style type="text/css">
+    .slider {
+        width: 50%;
+        margin: 100px auto;
+    }
+    
+    .slick-prev:before,
+    .slick-next:before {
+        font-family: 'slick';
+        font-size: 42px;
+        line-height: 5;
+        opacity: 155.75;
+        color: white;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: absolute;
+        transform: translateX(-41px);
+        width: 40%;
+    }
+    
+    .slick-slide {
+        margin: 0px 20px;
+    }
+    
+    .slick-prev.slick-arrow {
+        display: block;
+        transform: translate(66px, -140px);
+    }
+    
+    .slick-next.slick-arrow {
+        display: block;
+        transform: translate(-33px, -140px);
+    }
+    
+    .slick-slide img {
+        width: 100%;
+    }
+    
+    .slick-slide {
+        transition: all ease-in-out .3s;
+        opacity: .2;
+    }
+    
+    .slick-active {
+        opacity: .5;
+    }
+    
+    .slick-current {
+        opacity: 1;
+    }
+    
+    .slider-for {
+        width: 100%;
+        height: 494px;
+        margin: 30px auto 1px;
+        overflow: hidden;
+    }
+    
+    .slick-prev:before,
+    .slick-next:before {
+        color: white;
+    }
+    
+    #slick-container {
+        width: 100%;
+    }
+    
+    #slick-container img {
+        width: 100%;
+        min-height: 100%;
+        padding: 10px;
+        border-radius: 5px 20px;
+    }
+    
+    .slider-nav {
+        height: 130px;
+        margin: auto;
+    }
+    /* responsive para tablet */
+    
+    @media screen and (max-width: 990px) and (min-width: 768px) {
+        .slider-for {
+            /*para las imagenes que aparecen arriba*/
+            height: 400px;
+            margin: 30px auto 1px;
+            overflow: hidden;
+        }
+        #slick-container {
+            width: 100%;
+        }
+        #slick-container img {
+            width: 100%;
+            min-height: 100%;
+        }
+        .slider-nav {
+            height: 55px;
+            margin: auto;
+        }
+        .slider-nav .slick-track {
+            height: 130px;
+        }
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            z-index: 50;
+            margin-top: -12px;
+            padding: 70px;
+            border-radius: 20px;
+            border-style: hidden;
+        }
+    }
+    /* responsive para celular  */
+    
+    @media screen and (max-width: 768px) and (min-width: 360px) {
+        .slider-for {
+            width: 100%;
+            height: 90%;
+            margin: 60px auto 1px;
+            overflow: hidden;
+        }
+        .slider-nav {
+            width: 85%;
+            max-height: 121px;
+            margin: -4% auto 0 auto;
+            display: block;
+            transform: translateY(0);
+        }
+        .slick-list {
+            padding: 0px 50px;
+            height: 100%;
+            margin-top: 23px;
+        }
+        #slick-container {
+            width: 100%;
+        }
+        #slick-container img {
+            width: 100%;
+            min-height: 100%;
+        }
+        .slider-nav .slick-track {
+            min-height: 10vh;
+            max-height: 11vh;
+        }
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            z-index: 50;
+            margin-top: -12px;
+            padding: 70px;
+            border-radius: 20px;
+            border-style: hidden;
+        }
+    }
+</style>
+
+
+
+
+<style>
+    /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+    
+    #hide-me {
+        transform: translateY(-90px);
+        width: 100%;
+        height: 150%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.61) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(32, 32, 32, 0.815) 0%, rgba(0, 0, 0, 0.685) 120%) #9c9c9c;
+        background-blend-mode: multiply, multiply;
+        display: block;
+        position: fixed;
+        margin: 0;
+        z-index: 100000;
+        -moz-animation: cssAnimation 0s ease-in 10s forwards;
+        /* Firefox */
+        -webkit-animation: cssAnimation 0s ease-in 10s forwards;
+        /* Safari and Chrome */
+        -o-animation: cssAnimation 0s ease-in 10s forwards;
+        /* Opera */
+        animation: cssAnimation 0s ease-in 10s forwards;
+        transition: all .5s linear;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .containerpre,
+    .dot-container {
+        position: relative;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .containerpre {
+        transform-origin: center;
+        animation: anirotate 10s linear infinite;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        min-height: calc(100vh - 12px);
+    }
+    
+    .dot-container {
+        position: absolute;
+        border: 0px solid rgb(207, 100, 13);
+        border-radius: 50px;
+    }
+    
+    .dot-container:nth-child(2) {
+        transform: rotate(40deg);
+    }
+    
+    .dot-container:nth-child(2) .dot {
+        animation-delay: -0.5s;
+    }
+    
+    .dot-container:nth-child(3) {
+        transform: rotate(80deg);
+    }
+    
+    .dot-container:nth-child(3) .dot {
+        animation-delay: -1s;
+    }
+    
+    .dot {
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        background: rgb(247, 240, 154);
+        border-radius: 5px;
+        transform: translate(0, 0);
+        box-shadow: 5px 5px 50px 5px #fc602c;
+    }
+    
+    .dot:nth-child(1) {
+        top: 0;
+        left: calc(50% - 5px);
+        animation: ani1 2s infinite;
+    }
+    
+    .dot:nth-child(2) {
+        bottom: calc(28% - 5px);
+        left: calc(11% - 5px);
+        animation: ani2 2s infinite;
+    }
+    
+    .dot:nth-child(3) {
+        bottom: calc(28% - 5px);
+        right: calc(11% - 5px);
+        animation: ani3 2s infinite;
+    }
+    
+    [hidden] {
+        display: none;
+    }
+    
+    @keyframes anirotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(-359deg);
+        }
+    }
+    
+    @keyframes ani1 {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(-40px, 67px);
+        }
+    }
+    
+    @keyframes ani2 {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(77px, 0);
+        }
+    }
+    
+    @keyframes ani3 {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(-39px, -67px);
+        }
+    }
+    
+    @keyframes cssAnimation {
+        to {
+            width: 0;
+            height: 0;
+            overflow: hidden;
+        }
+    }
+    
+    @-webkit-keyframes cssAnimation {
+        to {
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
+    }
+</style>
+
+
+
+
+<div id="hide-me">
+    <p></p>
+    <div class="containerpre">
+        <div class="dot-container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="dot-container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="dot-container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+</div>
+
+
+<body>
+
+
+
+
+
+    <!-- 
+    <div id="redes">
+        <a href="https://es-la.facebook.com/platzi/" target="_blank"><img src="img/facebook.png" alt=""></a>
+        <a href="https://www.instagram.com/platzi/?hl=es-la" target="_blank"><img src="img/whatsapp.png" alt=""></a>
+        <a href="https://wa.link/jmjdd0" target="_blank"><img src="img/instagram.png" alt=""></a>
+    </div>
+     -->
+
+
+
+    <header>
+
+        <!-- Image and text -->
+
+
+
+
+
+        <nav class="navbar navbar-1 navbar-expand-lg navbar-dark" data-aos="fade-down" data-aos-easing="ease-in-sine" style="transform: translateY(-25px);">
+            <a class="navbar-brand" href="index.html#block1" target="_blank">
+                <img src="img/logo portafolio.png" width="40" height="40" class="d-inline-block align-top" alt="">Rodrigo Guzmán
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html#block1" target="_blank">Acerca de mí <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#block4" target="_blank">Habilidades</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Portafolio
+                           </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="index.html#block6" target="_blank">Edicion de imagen</a>
+                            <a class="dropdown-item" href="#libro-d-p">Manual corporativo y guiones</a>
+
+                            <a class="dropdown-item" href="#spline62">Animacion</a>
+
+                            <a class="dropdown-item" href="#block14">Maquetacion web</a>
+                            <a class="dropdown-item" href="#block12" href="#block12-1" href="#block12-2">Pintura digital y modelos 3d</a>
+
+                            <a class="dropdown-item" href="portafoliorodrigo-copia-2.html#spline61" target="_blank">Branding</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="portafoliorodrigo-copia-2.html#spline61-2" target="_blank">Hobbies</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="portafoliorodrigo-copia-2.html#block4" target="_blank">Experiencia</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="portafoliorodrigo-copia-2.html#contact-us" target="_blank">Contacto</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+
+
+
+    </header>
+
+    <main>
+
+
+
+        <div class="container">
+            <div class="container libros-p">
+                <h1 class="tittle-l">Libros de producción y manuales de identidad</h1>
+            </div>
+
+
+
+            <div id="libro-d-p">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="book col-6">
+                            <div class="cover">
+                                <h2>Manuales de identidad</h2>
+                            </div>
+                            <div class="page">
+
+                            </div>
+                            <div class="page">
+
+                            </div>
+                            <div class="page">
+
+                            </div>
+                            <div class="page">
+
+                            </div>
+                            <div class="page">
+
+                            </div>
+                            <div class="last-page">
+                                <div class="col-4">
+                                    <a href="https://drive.google.com/file/d/1KSzPem44EMnbPrr_2TmKEpn4zpU_8DFQ/view?usp=sharing" target="_blank"><img src="img/librosdeproduccionymanual.png" alt="">
+                                        <h2>Manual de identidad Krart-Ken studios</h2>
+                                    </a>
+                                </div>
+                                <!-- <div class="col-4">
+                                    <a href="#"><img src="img/librosdeproduccionymanual.png" alt="">
+                                        <h2>codeera</h2>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#"><img src="img/librosdeproduccionymanual.png" alt="">
+                                        <h2>codeera</h2>
+                                    </a>
+                                </div> -->
+                            </div>
+
+                            <div class="back-cover">
+                            </div>
+
+                        </div>
+                        <div class="book col-6">
+                            <div class="cover">
+                                <h2>Libros de producción</h2>
+                            </div>
+                            <div class="page"></div>
+                            <div class="page"></div>
+                            <div class="page"></div>
+                            <div class="page"></div>
+                            <div class="page"></div>
+                            <div class="last-page">
+                                <div class="col-4">
+                                    <a href="https://drive.google.com/drive/folders/1EL8QnMJ7HyYIwjX7LXiEzobjyUrfGFxi?usp=sharing" target="_blank"><img src="img/librosdeproduccionymanual.png" alt="">
+                                        <h2>Libro de producción comercial de zapatos</h2>
+                                    </a>
+                                </div>
+                                <!-- <div class="col-4">
+                                    <a href="#"><img src="img/librosdeproduccionymanual.png" alt="">
+                                        <h2>codeera</h2>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#"><img src="img/librosdeproduccionymanual.png" alt="">
+                                        <h2>codeera</h2>
+                                    </a>
+                                </div> -->
+                            </div>
+
+                            <div class="back-cover">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    
+
+
+
+        <div class="container">
+            <div id="block11">
+
+
+
+
+                <ul class="nav justify-content-center nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><span style="font-size: 1em; color: rgb(119, 21, 21);"><i class="far fa-eye"></i></span></a>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><span style="font-size: 1em; color: rgb(119, 21, 21);"><i class="far fa-eye"></i></a>
+                    </li>
+
+                    <!-- <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="ultima-tab" data-toggle="tab" href="#ultima" role="tab" aria-controls="profile" aria-selected="false"><span style="font-size: 1em; color: rgb(119, 21, 21);"><i class="far fa-eye"></i></a>
+                    </li> -->
+
+
+
+                    <!--
+                        <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                    </li>
+                    -->
+
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+
+                        <div class="videos">
+                            <div class="container">
+                                <div class="row">
+
+
+
+                                    <div class="col-lg-4 video" data-aos="fade-down">
+                                        <div class="container boton">
+                                            <a href="https://youtu.be/yDsRGCBV_H0" target="_blank"><img src="img/BOTON-PLAY.png" alt=""></a>
+                                        </div>
+                                        <a href="https://youtu.be/yDsRGCBV_H0" target="_blank"> <img src="./img/yDsRGCBV_H0_320x180.jpg">
+                                            <span class="videoinfo"><h4 style="font-size: 16px;">Animación de trazos</h4>
+                                                <p style="font-size: 14px;">  <br>
+                                                    
+                                               
+                                                 Video animado en after effects, combinando la música con efectos visuales generados gracias a varios elementos en la animación de trazados</p></span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-4 video" data-aos="fade-down">
+                                        <div class="container boton">
+                                            <a href="https://youtu.be/xoggX0q4SE4" target="_blank"><img src="img/BOTON-PLAY.png" alt=""></a>
+                                        </div>
+                                        <a href="https://youtu.be/xoggX0q4SE4" target="_blank"> <img src="./img/xoggX0q4SE4_320x180.jpg">
+                                            <span class="videoinfo"><h4 style="font-size: 16px;">Simulación <br> de escritura</h4>
+                                                <p style="font-size: 14px;">  <br>
+                                                    
+                                      
+                                                   Elemento hecho a partir de texto escrito y posteriormente aplicando la animacion simulada dentro de after effects</p></span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-4 video" data-aos="fade-down">
+                                        <div class="container boton">
+                                            <a href="https://youtu.be/M6dR23F98Q0" target="_blank"><img src="img/BOTON-PLAY.png" alt=""></a>
+                                        </div>
+                                        <a href="https://youtu.be/M6dR23F98Q0" target="_blank"> <img src="./img/M6dR23F98Q0_320x180.jpg">
+                                            <span class="videoinfo"><h4 style="font-size: 16px;">Video Croma</h4>
+                                                <p style="font-size: 14px;">  <br>
+                                                    
+                                              
+                                                   Pieza audiovisual generada gracias a la combinación de diferentes clips dentro de after effects</p></span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-4 video" data-aos="fade-up">
+                                        <div class="container boton">
+                                            <a href="https://youtu.be/J-ST557KJvE" target="_blank"><img src="img/BOTON-PLAY.png" alt=""></a>
+                                        </div>
+                                        <a href="https://youtu.be/J-ST557KJvE" target="_blank"> <img src="./img/J-ST557KJvE_320x180.jpg">
+                                            <span class="videoinfo"><h4 style="font-size: 16px;">Video <br> animado en premiere</h4>
+                                                <p style="font-size: 14px;">  <br>
+                                                    
+                                                
+                                                   Pequeña historia generada con la combinación de elementos de librerias gratuitas, tanto de audio como video, animados ende premiere</p></span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-4 video" data-aos="fade-up">
+                                        <div class="container boton">
+                                            <a href="https://youtu.be/h9uOQ-M-_OY" target="_blank"><img src="img/BOTON-PLAY.png" alt=""></a>
+                                        </div>
+                                        <a href="https://youtu.be/h9uOQ-M-_OY" target="_blank"> <img src="./img/h9uOQ-M-_OY_320x180.jpg">
+                                            <span class="videoinfo"><h4 style="font-size: 16px;">Animación <br> por máscaras</h4>
+                                                <p style="font-size: 14px;">  <br>
+                                                    
+                                               
+                                                  Animación hecha utilizando el tampón de clonacion de photoshop y luego importado dentro de after effects</p></span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-4 video" data-aos="fade-up">
+                                        <div class="container boton">
+                                            <a href="https://youtu.be/cXF9n2muQgE" target="_blank"><img src="img/BOTON-PLAY.png" alt=""></a>
+                                        </div>
+                                        <a href="https://youtu.be/cXF9n2muQgE" target="_blank"> <img src="./img/cXF9n2muQgE_320x180.jpg">
+                                            <span class="videoinfo"><h4 style="font-size: 16px;">Reel <br> Krart-Ken Studios</h4>
+                                                <p style="font-size: 14px;">  <br>
+                                                    
+                                              
+                                            Reel generado para una campaña de espectativa dentro de la red social de instagram</p></span>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                        <div class="videos">
+                            <div class="container">
+                                <div class="row">
+
+
+
+                                    <div class="col-lg-4 video" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                                        <div class="container boton">
+                                            <a href="https://youtu.be/bGQ6LdFeIYc" target="_blank"><img src="img/BOTON-PLAY.png" alt=""></a>
+                                        </div>
+                                        <a href="https://youtu.be/bGQ6LdFeIYc" target="_blank"> <img src="./img/bGQ6LdFeIYc_320x180.jpg">
+                                            <span class="videoinfo"><h4 style="font-size: 16px;">Animación Star wars</h4>
+                                                <p style="font-size: 14px;">  <br>
+                                                    
+                                            
+                                                    Animación con capas 3d, uso de partículas y ruido fractal, hecha con after effects hecha con el motivo de referenciar el intro de star wars y comprender su realización</p></span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-4 video" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                                        <div class="container boton">
+                                            <a href="https://youtu.be/7ZBwBgTpS6U" target="_blank"><img src="img/BOTON-PLAY.png" alt=""></a>
+                                        </div>
+                                        <a href="https://youtu.be/7ZBwBgTpS6U" target="_blank"> <img src="./img/7ZBwBgTpS6U_320x180.jpg">
+                                            <span class="videoinfo"><h4 style="font-size: 16px;">Animación brazo</h4>
+                                                <p style="font-size: 14px;">  <br>
+                                                    
+                                                
+                                                   Pieza audiovisual, combinando y referenciando la canción y video musical "quand ces't" del artista Stromae</p></span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-4 video" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                                        <div class="container boton">
+                                            <a href="https://youtu.be/5_6aoItjGvg" target="_blank"><img src="img/BOTON-PLAY.png" alt=""></a>
+                                        </div>
+                                        <a href="https://youtu.be/5_6aoItjGvg" target="_blank"> <img src="./img/5_6aoItjGvg_320x180.jpg">
+                                            <span class="videoinfo"><h4 style="font-size: 16px;">Bumper <br> discovery channel</h4>
+                                                <p style="font-size: 14px;">  <br>
+                                                    
+                                               
+                                                  Animación realizada con el motivo de aprender la estructura y realizacion de un bumper televisivo</p></span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-4 video" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                                        <div class="container boton">
+                                            <a href="https://youtu.be/RUVIGa2yf2U" target="_blank"><img src="img/BOTON-PLAY.png" alt=""></a>
+                                        </div>
+                                        <a href="https://youtu.be/RUVIGa2yf2U" target="_blank"> <img src="./img/RUVIGa2yf2U_320x180.jpg">
+                                            <span class="videoinfo"><h4 style="font-size: 16px;">Intro </h4>
+                                                <p style="font-size: 14px;">  <br>
+                                                    
+                                            
+                                                 Intro animado en donde se hizo previamente los guiones de la historia junto a los personajes. Hecho con diversas tecnicas de animación y combinando diversos programas</p></span>
+                                        </a>
+                                    </div>
+
+
+
+                                    <div class="col-lg-4 video" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                                        <div class="container boton">
+                                            <a href="https://youtu.be/rW_kkb4A2tU" target="_blank"><img src="img/BOTON-PLAY.png" alt=""></a>
+                                        </div>
+                                        <a href="https://youtu.be/rW_kkb4A2tU" target="_blank"> <img src="./img/rW_kkb4A2tU_320x180.jpg">
+                                            <span class="videoinfo"><h4 style="font-size: 16px;">Diseño <br> en 3d de personaje</h4>
+                                                <p style="font-size: 14px;">  <br>
+                                                    
+                                           
+                                                    Modelado de personaje hecho en blender</p></span>
+                                        </a>
+                                    </div>
+
+
+                                    <div class="col-lg-4 video" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                                        <div class="container boton">
+                                            <a href="https://youtu.be/nLq-53DbU3g" target="_blank"><img src="img/BOTON-PLAY.png" alt=""></a>
+                                        </div>
+                                        <a href="https://youtu.be/nLq-53DbU3g" target="_blank"> <img src="./img/nLq-53DbU3g_320x180.jpg">
+                                            <span class="videoinfo"><h4 style="font-size: 16px;">Timelapse <br> personajes intro</h4>
+                                                <p style="font-size: 14px;">  <br>
+                                                    
+                                              
+                                                    Uso de programas de dibujo, rigin y diseño 3d de modelos de personajes para la animación del intro anteriormente mostrado</p></span>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- <div class="tab-pane fade" id="ultima" role="tabpanel" aria-labelledby="ultima-tab">
+
+                        <div class="videos">
+                            <div class="container">
+                                <div class="row">
+
+
+
+                                    <div class="col-lg-4 video" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                                        <div class="container boton">
+                                            <a href="https://youtu.be/bGQ6LdFeIYc" target="_blank"><img src="img/BOTON-PLAY.png" alt=""></a>
+                                        </div>
+                                        <a href="https://youtu.be/bGQ6LdFeIYc" target="_blank"> <img src="./img/bGQ6LdFeIYc_320x180.jpg">
+                                            <span class="videoinfo">informaciondevideo</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-4 video" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                                        <div class="container boton">
+                                            <a href="https://youtu.be/7ZBwBgTpS6U" target="_blank"><img src="img/BOTON-PLAY.png" alt=""></a>
+                                        </div>
+                                        <a href="https://youtu.be/7ZBwBgTpS6U" target="_blank"> <img src="./img/7ZBwBgTpS6U_320x180.jpg">
+                                            <span class="videoinfo">informaciondevideo</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-4 video" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                                        <div class="container boton">
+                                            <a href="https://youtu.be/5_6aoItjGvg" target="_blank"><img src="img/BOTON-PLAY.png" alt=""></a>
+                                        </div>
+                                        <a href="https://youtu.be/5_6aoItjGvg" target="_blank"> <img src="./img/5_6aoItjGvg_320x180.jpg">
+                                            <span class="videoinfo">informaciondevideo</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-lg-4 video" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                                        <div class="container boton">
+                                            <a href="https://youtu.be/RUVIGa2yf2U" target="_blank"><img src="img/BOTON-PLAY.png" alt=""></a>
+                                        </div>
+                                        <a href="https://youtu.be/RUVIGa2yf2U" target="_blank"> <img src="./img/RUVIGa2yf2U_320x180.jpg">
+                                            <span class="videoinfo">informaciondevideo</span>
+                                        </a>
+                                    </div>
+
+
+
+                                    <div class="col-lg-4 video" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                                        <div class="container boton">
+                                            <a href="https://youtu.be/rW_kkb4A2tU" target="_blank"><img src="img/BOTON-PLAY.png" alt=""></a>
+                                        </div>
+                                        <a href="https://youtu.be/rW_kkb4A2tU" target="_blank"> <img src="./img/rW_kkb4A2tU_320x180.jpg">
+                                            <span class="videoinfo">informaciondevideo</span>
+                                        </a>
+                                    </div>
+
+
+                                    <div class="col-lg-4 video" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                                        <div class="container boton">
+                                            <a href="https://www.youtube.com/" target="_blank"><img src="img/BOTON-PLAY.png" alt=""></a>
+                                        </div>
+                                        <a href="https://www.youtube.com/" target="_blank"> <img src="./img/miniatura-youtube.jpg">
+                                            <span class="videoinfo">informaciondevideo</span>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div> -->
+
+
+                </div>
+
+            </div>
+
+
+
+            <div id="block14">
+                <div class="container">
+                    <h2>Maquetación web</h2>
+                    <div class="row">
+
+                        <div class="col-md-4" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="600">
+                            <div class="card">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <img src="img/sitio-web.png" alt="">
+                                        <h3>Mi portfolio</h3>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        Esta es la página que estás viendo ahora mismo <br>
+                                        <a href="https://portafoliorodrigoguzman.000webhostapp.com/" target="_blank">portafolio </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="800">
+                            <div class="card">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <img src="img/sitio-web.png" alt="">
+                                        <h3>Hobbies</h3>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        Esta es mi página personal de mis hobbies favoritos <br>
+                                        <a href="https://ragmartgltc.github.io/Dibujo/" target="_blank">Hobbies</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="600">
+                            <div class="card">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <img src="img/sitio-web.png" alt="">
+                                        <h3>Krart-ken studios</h3>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        Esta es una pagina hecha de manera grupal para un proyecto <br>
+                                        <a href="https://portafoliorodrigoguzman.000webhostapp.com/" target="_blank">Krart-Ken Studios </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container" id="pd3d" style="transform: translateY(26px);border-radius: 10px 95px 10px  10px;margin-top: 60px;padding-top: 1px;">
+
+                <div class="titulo paint3d">
+                    <h4>Pintura digital y personajes</h4>
+
+                </div>
+                <div class="parrafo">
+                    <p>Me gusta implementar tiempo en dibujar tanto de manera digital como tradicional para hacer personajes o retratos, así como también modelarlos en 3d, aquí puedes encontrar entre los mejores trabajos que he realizado</p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer id="footer">
+
+
+
+        <div id="block9-1">
+            <div class="container ">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" target="_blank" href="index.html">Previous</a></li>
+                        <li class="page-item"><a class="page-link" target="_blank" href="index.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" target="_blank" href="portafoliorodrigo-copia-2.html">3</a></li>
+                        <li class="page-item"><a class="page-link" target="_blank" href="portafoliorodrigo-copia-2.html">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+
+
+                    <div class="col-lg-12 col-md-12 footer-links">
+                        <h4>Mis redes sociales</h4>
+                        <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
+                        <div class="social-links mt-3">
+                            <a href="https://www.pinterest.at/rodrigoandresgm20/_saved/" target="_blank" class="twitter"><i class="bx bxl-pinterest"></i></a>
+                            <a href="https://www.deviantart.com/ragm924" target="_blank" class="facebook"><i class="bx 	
+                                bxl-deviantart"></i></a>
+                            <a href="https://www.instagram.com/ray.ec98/?hl=es-la" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="https://www.behance.net/rodrigoguzman7" target="_blank" class="artstation"><i class="bx 	
+bxl-behance"></i></a>
+                            <a href="https://www.linkedin.com/in/andr%C3%A9s-guzman-5043371a8/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+
+                            <div id="whatsapp">
+                                <a href="https://wa.link/ecuymb" target="_blank"><img src="img/whatsapp.png" alt=""></a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery.slim.min.js"><\/script>')
+    </script>
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script src="js/index.js"></script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+    <script>
+        lightGallery(document.querySelector('.gallery'))
+    </script>
+
+
+    <!-- <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script src="./vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="./vendor/php-email-form/validate.js"></script>
+    <script src="./vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="./vendor/venobox/venobox.min.js"></script>
+    <script src="./vendor/owl.carousel/owl.carousel.min.js"></script>
+
+    <script src="./vendor/aos/aos.js"></script>
+
+    <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+    <script src="js/slick.min.js" type="text/javascript"></script>
+    <script src="js/slick.js" type="text/javascript"></script>
+
+
+    <script type="text/javascript">
+        $(document).on('ready', function() {
+            $(".vertical-center-4").slick({
+                dots: true,
+                vertical: true,
+                centerMode: true,
+                slidesToShow: 4,
+                slidesToScroll: 2
+            });
+            $(".vertical-center-3").slick({
+                dots: true,
+                vertical: true,
+                centerMode: true,
+                slidesToShow: 3,
+                slidesToScroll: 3
+            });
+            $(".vertical-center-2").slick({
+                dots: true,
+                vertical: true,
+                centerMode: true,
+                slidesToShow: 2,
+                slidesToScroll: 2
+            });
+            $(".vertical-center").slick({
+                dots: true,
+                vertical: true,
+                centerMode: true,
+            });
+            $(".vertical").slick({
+                dots: true,
+                vertical: true,
+                slidesToShow: 3,
+                slidesToScroll: 3
+            });
+            $(".regular").slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3
+            });
+            $(".center").slick({
+                dots: true,
+                infinite: true,
+                centerMode: true,
+                slidesToShow: 5,
+                slidesToScroll: 3
+            });
+            $(".variable").slick({
+                dots: true,
+                infinite: true,
+                variableWidth: true
+            });
+            $(".lazy").slick({
+                lazyLoad: 'ondemand', // ondemand progressive anticipated
+                infinite: true
+            });
+            $('.slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.slider-nav'
+            });
+            $('.slider-nav').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.slider-for',
+                dots: true,
+                centerMode: true,
+                focusOnSelect: true
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

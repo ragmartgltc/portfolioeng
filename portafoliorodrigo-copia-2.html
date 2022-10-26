@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="icon" href="img/logo portafolio.png" type="image/png" />
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+
+    <!-- Favicons -->
+
+
+
+    <!-- <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+    <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="./vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="./vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="./vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="./vendor/aos/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles-portfolio.css">
+    <link href="css/styleninestar.css" rel="stylesheet">
+
+</head>
+
+
+<style>
+    /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+    
+    #hide-me {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.61) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(32, 32, 32, 0.815) 0%, rgba(0, 0, 0, 0.685) 120%) #9c9c9c;
+        background-blend-mode: multiply, multiply;
+        display: block;
+        position: fixed;
+        margin: 0;
+        z-index: 100000;
+        -moz-animation: cssAnimation 0s ease-in 10s forwards;
+        /* Firefox */
+        -webkit-animation: cssAnimation 0s ease-in 10s forwards;
+        /* Safari and Chrome */
+        -o-animation: cssAnimation 0s ease-in 10s forwards;
+        /* Opera */
+        animation: cssAnimation 0s ease-in 10s forwards;
+        transition: all .5s linear;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .containerpre,
+    .dot-container {
+        position: relative;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .containerpre {
+        transform-origin: center;
+        animation: anirotate 10s linear infinite;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        min-height: calc(100vh - 12px);
+    }
+    
+    .dot-container {
+        position: absolute;
+        border: 0px solid rgb(207, 100, 13);
+        border-radius: 50px;
+    }
+    
+    .dot-container:nth-child(2) {
+        transform: rotate(40deg);
+    }
+    
+    .dot-container:nth-child(2) .dot {
+        animation-delay: -0.5s;
+    }
+    
+    .dot-container:nth-child(3) {
+        transform: rotate(80deg);
+    }
+    
+    .dot-container:nth-child(3) .dot {
+        animation-delay: -1s;
+    }
+    
+    .dot {
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        background: rgb(247, 240, 154);
+        border-radius: 5px;
+        transform: translate(0, 0);
+        box-shadow: 5px 5px 50px 5px #fc602c;
+    }
+    
+    .dot:nth-child(1) {
+        top: 0;
+        left: calc(50% - 5px);
+        animation: ani1 2s infinite;
+    }
+    
+    .dot:nth-child(2) {
+        bottom: calc(28% - 5px);
+        left: calc(11% - 5px);
+        animation: ani2 2s infinite;
+    }
+    
+    .dot:nth-child(3) {
+        bottom: calc(28% - 5px);
+        right: calc(11% - 5px);
+        animation: ani3 2s infinite;
+    }
+    
+    [hidden] {
+        display: none;
+    }
+    
+    @keyframes anirotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(-359deg);
+        }
+    }
+    
+    @keyframes ani1 {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(-40px, 67px);
+        }
+    }
+    
+    @keyframes ani2 {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(77px, 0);
+        }
+    }
+    
+    @keyframes ani3 {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(-39px, -67px);
+        }
+    }
+    
+    @keyframes cssAnimation {
+        to {
+            width: 0;
+            height: 0;
+            overflow: hidden;
+        }
+    }
+    
+    @-webkit-keyframes cssAnimation {
+        to {
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
+    }
+</style>
+
+
+
+
+<div id="hide-me">
+    <!-- <p>Mi portafolio esta cargando, para una mejor experiencia miralo en computador</p> -->
+    <div class="containerpre">
+        <div class="dot-container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="dot-container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="dot-container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+</div>
+
+<body>
+
+
+    <!-- 
+    <div id="redes">
+        <a href="https://es-la.facebook.com/platzi/" target="_blank"><img src="img/facebook.png" alt=""></a>
+        <a href="https://www.instagram.com/platzi/?hl=es-la" target="_blank"><img src="img/whatsapp.png" alt=""></a>
+        <a href="https://wa.link/jmjdd0" target="_blank"><img src="img/instagram.png" alt=""></a>
+    </div>
+     -->
+
+
+
+    <header>
+
+        <!-- Image and text -->
+
+
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark" data-aos="fade-down" data-aos-easing="ease-in-sine">
+            <a class="navbar-brand" href="index.html#block1" target="_blank">
+                <img src="img/logo portafolio.png" width="40" height="40" class="d-inline-block align-top" alt="">Rodrigo Guzmán
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html#block1">Acerca de mí <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#block4">Habilidades</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Portafolio
+                           </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="index.html#block6">Edición de imagen</a>
+                            <a class="dropdown-item" href="portafoliorodrigo-copia.html#libro-d-p" target="_blank">Manual corporativo y guiones</a>
+
+                            <a class="dropdown-item" href="portafoliorodrigo-copia.html#spline62" target="_blank">Animacion</a>
+
+                            <a class="dropdown-item" href="portafoliorodrigo-copia.html#block14" target="_blank">Maquetacion web</a>
+                            <a class="dropdown-item" href="portafoliorodrigo-copia.html#block12" href="portafoliorodrigo-copia.html#block12-1" href="portafoliorodrigo-copia.html#block12-2" target="_blank">Pintura digital y modelos 3d</a>
+
+                            <a class="dropdown-item" href="#spline61">Branding y marqueting</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#spline61-2">Hobbies</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="portafoliorodrigo-copia-2.html#block4" target="_blank">Experiencia</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-us">Contacto</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+
+
+
+
+
+    </header>
+
+
+    <main>
+
+        <div class="container">
+            <div id="spline61" data-aos="fade-up" data-aos-easing="linear">
+
+                <div class="titulo">
+                    <h4>Branding y marqueting</h4>
+
+                </div>
+                <div class="parrafo">
+                    <p>Estos son algunos elementos desarrollados con la identidad corporativa de un proyecto grupal</p>
+                </div>
+
+                <div class="container splinecel">
+
+                </div>
+                <span class="hidespline"></span>
+
+                <iframe frameborder='0' width='100%' height='700px'></iframe> </div>
+        </div>
+
+
+
+
+
+
+        <div class="container">
+           
+
+            <section id="portfolio" class="portfolio">
+                <div class="container">
+
+                    <div class="section-title">
+                        <!-- <h2>Galeria</h2> -->
+
+                    </div>
+
+                    <div class="row" data-aos="fade-up" data-aos-delay="100">
+                        <div class="col-lg-12">
+                            <ul id="portfolio-flters">
+
+                                <li data-filter=".filter-branding">Branding</li>
+                                <li data-filter=".filter-planymarketing">Plan y estudio de marqueting</li>
+                                <li data-filter=".filter-empaques">Desarrollo de empaques</li>
+                                <li data-filter=".filter-web">Maquetacion y wireframes</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row portfolio-container" data-aos="fade-up">
+
+                        ---- ----- ------
+
+
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                            <div class="portfolio-wrap">
+                                <img src="img/logo-kks1.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-links">
+                                    <a href="img/logo-kks.png" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-plus-circle"></i></a>
+                                    <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Isotipo corporativo</h4>
+                                    <p>Isotipo vectorizado con el uso de elementos que tienen difuminados, uso de trazados y colores corporativos</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                            <div class="portfolio-wrap">
+                                <img src="img/Business_Card_Mockup_ss0231.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-links">
+                                    <a href="img/Business_Card_Mockup_ss023.png" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-plus-circle"></i></a>
+                                    <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Tarjetas de presentación</h4>
+                                    <p>Tarjetas de identidad visual de krart ken studios</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                            <div class="portfolio-wrap">
+                                <img src="img/botones1.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-links">
+                                    <a href="img/botones.png" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-plus-circle"></i></a>
+                                    <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Botones</h4>
+                                    <p>Botones con la identidad visual de krart ken studios</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        ---
+
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                            <div class="portfolio-wrap">
+                                <img src="img/asas4301.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-links">
+                                    <a href="img/asas430.png" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-plus-circle"></i></a>
+                                    <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Camiseta</h4>
+                                    <p>Camiseta con la identidad visual de krart ken studios</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                            <div class="portfolio-wrap">
+                                <img src="img/448ssasa48051.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-links">
+                                    <a href="img/448ssasa4805.pngg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-plus-circle"></i></a>
+                                    <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Pocillo</h4>
+                                    <p>Pocillos con la identidad visual de krart ken studios</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                            <div class="portfolio-wrap">
+                                <img src="img/O7DBsasWV11.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-links">
+                                    <a href="img/O7DBsasWV1.png" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-plus-circle"></i></a>
+                                    <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Libreta</h4>
+                                    <p>Libreta con la identidad visual de krart ken studios</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                            <div class="portfolio-wrap">
+                                <img src="img/Mockup_Camiseta_Doblada_mocksaupgratis1.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-links">
+                                    <a href="img/Mockup_Camiseta_Doblada_mocksaupgratis.png" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-plus-circle"></i></a>
+                                    <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Camiseta doblada</h4>
+                                    <p>Camiseta con la identidad visual de krart ken studios</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-planymarketing">
+                            <div class="portfolio-wrap">
+                                <img src="img/descarga1.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-links">
+                                    <a href="img/descarga.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-plus-circle"></i></a>
+                                    <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Plan y estudio de marqueting</h4>
+                                    <p>Link en el botón de la derecha</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                            <div class="portfolio-wrap">
+                                <img src="img/Office11.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-links">
+                                    <a href="img/Office1.png" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-plus-circle"></i></a>
+                                    <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Mockup oficina</h4>
+                                    <p>oOficina con la identidad visual de krart ken studios</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        ---- ---- --- ----
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                            <div class="portfolio-wrap">
+                                <img src="img/Mockup_Rótulo_Oficina_mockupgratis.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-links">
+                                    <a href="img/Mockup_Rótulo_Oficina_mockupgratis.png" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-plus-circle"></i></a>
+                                    <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Mockup oficina</h4>
+                                    <p>Oficina con la identidad visual de krart ken studios</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+                            <div class="portfolio-wrap">
+                                <img src="img/manual de identidad1.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-links">
+                                    <a href="img/manual de identidad.png" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-plus-circle"></i></a>
+                                    <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Manual de identidad</h4>
+                                    <p>Este archivo se encuentra en la seccion de manuales de identidad, esta es una preview</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-empaques">
+                            <div class="portfolio-wrap">
+                                <img src="img/empaques-021.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-links">
+                                    <a href="img/empaques-02.png" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-plus-circle"></i></a>
+                                    <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Empaque para elementos corporativos</h4>
+                                    <p>Empaque realizado de manera que su contenido no se dañe, ademas de ser formulado en caja para envios a larga distancia </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-empaques">
+                            <div class="portfolio-wrap">
+                                <img src="img/empaques_Mesa1.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-links">
+                                    <a href="img/empaques_Mesa.png" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-plus-circle"></i></a>
+                                    <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Empaque para elementos corporativos</h4>
+                                    <p>Empaque realizado de manera que su contenido no se dañe, ademas de ser formulado en caja para envios a larga distancia </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-empaques">
+                            <div class="portfolio-wrap">
+                                <img src="img/empaquesSin1.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-links">
+                                    <a href="img/empaquesSin.png" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-plus-circle"></i></a>
+                                    <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Empaque para elementos corporativos</h4>
+                                    <p>Empaque realizado de manera que su contenido no se dañe, ademas de ser formulado en caja para envios a larga distancia </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-empaques">
+                            <div class="portfolio-wrap">
+                                <img src="img/empaque1.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-links">
+                                    <a href="img/empaque.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-plus-circle"></i></a>
+                                    <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Empaque para elementos corporativos</h4>
+                                    <p>Empaque realizado de manera que su contenido no se dañe, ademas de ser formulado en caja para envios a larga distancia </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <img src="img/3portfoliomovil1.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-links">
+                                    <a href="img/3portfoliomovil.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-plus-circle"></i></a>
+                                    <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Mockup de pagina web </h4>
+                                    <p>Mockup de pagina web en su version movil</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <img src="img/3portfolioweb1.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-links">
+                                    <a href="img/3portfolioweb.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-plus-circle"></i></a>
+                                    <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Mockup de pagina web </h4>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <img src="img/pagina-webkks1.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-links">
+                                    <a href="img/pagina-webkks.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-plus-circle"></i></a>
+                                    <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Mockup de pagina web para proyecto </h4>
+                                    <p>Mockup de pagina para proyecto grupal</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </section>
+
+           
+
+            <section id="contact-us" class="contact-us section-bg">
+                <div class="container">
+                    <div class="row">
+
+                        <!-- section title -->
+                        <div class="col-md-12 title text-center wow fadeIn" data-wow-duration="500ms">
+                            <h2> <span class="color">Contáctame</span></h2>
+
+                        </div>
+                        <!-- /section title -->
+
+                        <!-- Contact Details -->
+                        <div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
+                            <h3>Detalles de contacto</h3>
+                            <p>Si hasta el momento te ha interesado el contenido de este portafolio, no dudes en comunicarte conmigo por estos canales de comunicación o mediante mis redes sociales (utilizo principalmente instagram y facebook)</p>
+                            <div class="contact-details">
+                                <!-- <div class="con-info clearfix">
+                                <i class="tf-map-pin"></i>
+                                <span>Khaja Road, Bayzid, Chittagong, Bangladesh</span>
+                            </div> -->
+
+                                <div class="con-info clearfix">
+                                    <i class="tf-ion-ios-telephone-outline"></i>
+                                    <span>Numero celular: 3224418430</span>
+                                </div>
+
+                                <!-- <div class="con-info clearfix">
+                                <i class="tf-ion-iphone"></i>
+                                <span>Fax: +880-31-000-000</span>
+                            </div> -->
+
+                                <div class="con-info clearfix">
+                                    <i class="tf-ion-ios-email-outline"></i>
+                                    <span>Email: rodrigoandresgm20@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / End Contact Details -->
+
+                        <!-- Contact Form -->
+                        <div class="contact-form col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <form id="contact-form" method="post" action="sendmail.php" role="form">
+
+                                <div class="form-group">
+                                    <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>
+                                </div>
+
+
+
+                                <div id="cf-submit">
+                                    <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+                                </div>
+
+                            </form>
+                        </div>
+                        <!-- ./End Contact Form -->
+
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+
+                <!-- Google Map -->
+                <div class="google-map">
+                    <div id="map-canvas"></div>
+                </div>
+                <!-- /Google Map -->
+
+            </section>
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+    <footer id="footer">
+
+
+
+        <div id="block9-1-2">
+            <div class="container ">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" target="_blank" href="portafoliorodrigo-copia.html">Previous</a></li>
+                        <li class="page-item"><a class="page-link" target="_blank" href="index.html">1</a></li>
+                        <li class="page-item"><a class="page-link" target="_blank" href="portafoliorodrigo-copia.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+
+
+                    <div class="col-lg-12 col-md-12 footer-links">
+                        <h4>Mis redes sociales</h4>
+                        <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
+                        <div class="social-links mt-3">
+                            <a href="https://www.pinterest.at/rodrigoandresgm20/_saved/" target="_blank" class="twitter"><i class="bx bxl-pinterest"></i></a>
+                            <a href="https://www.deviantart.com/ragm924" target="_blank" class="facebook"><i class="bx 	
+                                bxl-deviantart"></i></a>
+                            <a href="https://www.instagram.com/ray.ec98/?hl=es-la" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="https://www.behance.net/rodrigoguzman7" target="_blank" class="artstation"><i class="bx 	
+bxl-behance"></i></a>
+                            <a href="https://www.linkedin.com/in/andr%C3%A9s-guzman-5043371a8/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            <div id="whatsapp">
+                                <a href="https://wa.link/ecuymb" target="_blank"><img src="img/whatsapp.png" alt=""></a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </footer>
+
+
+
+
+
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery.slim.min.js"><\/script>')
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://kit.fontawesome.com/25098f9fce.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <script>
+        AOS.init(
+
+        );
+    </script>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+
+    <script>
+        lightGallery(document.querySelector('.gallery'))
+    </script>
+
+
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <!-- <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script src="./vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="./vendor/php-email-form/validate.js"></script>
+    <script src="./vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="./vendor/venobox/venobox.min.js"></script>
+    <script src="./vendor/owl.carousel/owl.carousel.min.js"></script>
+
+    <script src="./vendor/aos/aos.js"></script>
+
+
+
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>

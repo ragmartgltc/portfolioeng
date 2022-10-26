@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>galeria</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            transition: all .2s linear;
+        }
+        
+        body {
+            background: rgb(26, 26, 26);
+        }
+        
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            align-items: center;
+            padding: auto 0;
+        }
+        
+        .gallery a {
+            height: 100px;
+            width: 100px;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 0 0px;
+        }
+        
+        .gallery a img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .gallery a img:hover {
+            transform: scale(1.4);
+        }
+        
+        .lg-actions .lg-prev {
+            left: 400px;
+        }
+        
+        .lg-actions .lg-next {
+            right: 400px;
+        }
+        
+        .lg-actions .lg-next,
+        .lg-actions .lg-prev {
+            border-radius: 0px;
+            transform: translateY(164%);
+            color: #999;
+            cursor: pointer;
+            display: block;
+            font-size: 42px;
+            padding: 0;
+            position: absolute;
+            z-index: 3000;
+            outline: 0;
+            border: none;
+            background-color: transparent;
+        }
+        
+        .lg-outer,
+        .lg-outer .lg,
+        .lg-outer .lg-inner {
+            height: 85%;
+            width: 100%;
+        }
+        
+        .lg-backdrop {
+            height: 85%;
+            transform: translateY(9%);
+        }
+        
+        .lg-outer .lg-img-wrap {
+            position: absolute;
+            padding: 0 25%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        
+        .lg-outer .lg-img-wrap {
+            position: absolute;
+            padding: 0 0 10% 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        
+        .lg-outer * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            transform: translateY(2%);
+        }
+        
+        body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+            opacity: 1;
+            transform: translateY(21%);
+        }
+        
+        img .img-slick-info {
+            display: none;
+            background: rgba(0, 0, 0, 0.904);
+            z-index: 70;
+            width: 400px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            position: absolute;
+            left: 0;
+            height: 150px;
+            right: 0;
+            bottom: 90px;
+            transform: translate(25px, 80px);
+        }
+        
+        img .galeria-img:hover .img-slick-info {
+            display: block;
+        }
+        /* responsive para tablets */
+        
+        @media screen and (max-width: 990px) and (min-width: 768px) {
+            .lg-actions .lg-prev {
+                left: 20%;
+            }
+            .lg-actions .lg-next {
+                right: 20%;
+            }
+        }
+        /* responsive para celular */
+        
+        @media screen and (max-width: 768px) and (min-width: 320px) {
+            .lg-actions .lg-prev {
+                left: 25%;
+            }
+            .lg-actions .lg-next {
+                right: 25%;
+            }
+        }
+        
+        @media screen and (max-width: 990px) and (min-width: 585px) {
+            .gallery a {
+                height: 100px;
+                width: 156px !important;
+                border-radius: 5px;
+                overflow: hidden;
+                margin: 0 0px;
+                margin-top: 3% !important;
+            }
+        }
+        
+        @media screen and (max-width: 585px) and (min-width: 550px) {
+            .gallery a {
+                height: 100px;
+                width: 143px !important;
+                border-radius: 5px;
+                overflow: hidden;
+                margin: 0 0px;
+                margin-top: 4% !important;
+            }
+        }
+        
+        @media screen and (max-width: 550px) and (min-width: 450px) {
+            .gallery a {
+                height: 100px;
+                width: 100px;
+                border-radius: 5px;
+                overflow: hidden;
+                margin: 0 0px;
+                margin-top: 4% !important;
+            }
+        }
+        
+        @media screen and (max-width: 450px) and (min-width: 320px) {
+            .gallery a {
+                height: 100px;
+                width: 100px;
+                border-radius: 5px;
+                overflow: hidden;
+                margin: 0 0px;
+                margin-top: 6% !important;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="gallery">
+
+            <a href="img/personajes-kks.jpg">
+                <img alt=".." src="img/personajes-kks.jpg" />
+            </a>
+
+            <a href="img/pd.jpg">
+                <img alt=".." src="img/pd.jpg" />
+            </a>
+
+
+            <a href="img/Ilustración.jpg">
+                <img alt=".." src="img/Ilustración.jpg" />
+            </a>
+
+
+            <a href="img/designdoll.jpg">
+                <img alt=".." src="img/designdoll.jpg" />
+            </a>
+
+
+            <a href="img/1er render phill.png">
+                <img alt=".." src="img/1er render phill.png" />
+            </a>
+
+            <a href="img/4torender blender.png">
+                <img alt=".." src="img/4torender blender.png" />
+            </a>
+
+            <a href="img/5to render blender.png">
+                <img alt=".." src="img/5to render blender.png" />
+            </a>
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+
+    <script>
+        lightGallery(document.querySelector('.gallery'))
+    </script>
+
+</body>
+
+</html>

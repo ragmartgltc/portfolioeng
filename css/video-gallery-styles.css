@@ -1,0 +1,48 @@
+#block11 .videos .col-md-4 {
+    margin-bottom: 30px;
+    margin-right: -20px;
+    align-content: center;
+}
+
+#block11 iframe {
+    border-radius: 20px 20px 20px 20px;
+}
+
+#block11 .videos {
+    background: rgb(26, 26, 26);
+    padding-top: 30px;
+}
+
+#block11 videos .boton a {
+    background: rgb(133, 11, 11);
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    border-radius: 50px;
+    position: absolute;
+}
+
+#block11 .videos .boton a img {
+    height: 30px;
+    width: 30px;
+    margin: 25% auto;
+    display: block;
+}
+
+#block11 .nav {
+    text-align: center;
+}
+
+#block11 {
+    margin-top: 40px;
+}
+
+#block11 .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: white;
+    background-color: rgb(26, 26, 26);
+}
+
+#block11 a {
+    color: rgb(26, 26, 26);
+}

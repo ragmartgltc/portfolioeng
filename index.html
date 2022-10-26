@@ -1,0 +1,2473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link rel="icon" href="img/logo portafolio.png" type="image/png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet prefetch"
+      href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/25098f9fce.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="./vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="./vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="./vendor/venobox/venobox.css" rel="stylesheet" />
+    <link
+      href="./vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link href="./vendor/aos/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/styles-portfolio.css" />
+    <link href="css/styleninestar.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+  </head>
+  <style type="text/css">
+    .slider {
+      width: 50%;
+      margin: 100px auto;
+    }
+
+    .slick-track {
+      opacity: 1;
+      width: 1720px;
+      margin-top: 31px;
+      transform: translate3d(-430px, 0px, 0px);
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-slide {
+      transition: all ease-in-out 0.3s;
+      opacity: 0.2;
+    }
+
+    .slick-active {
+      opacity: 0.5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+
+    .slider-for {
+      width: 700px;
+      height: 433px;
+      margin: 30px auto 1px;
+      overflow: hidden;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+    #slick-container {
+      margin-top: 175px;
+      width: 100%;
+    }
+
+    #slick-container img {
+      width: 100%;
+      min-height: 100%;
+      border-radius: 20px;
+    }
+
+    .slider-nav {
+      width: 700px;
+      height: 130px;
+      margin: auto;
+    }
+
+    .slick-prev.slick-arrow {
+      display: block;
+      transform: translate(-33px, -14px);
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      font-family: "slick";
+      font-size: 47px;
+      line-height: 1;
+      opacity: 61.75;
+      color: white;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    /* responsive para tablet */
+
+    .navbar-nav {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding-left: 0px;
+      margin-bottom: 0;
+      list-style: none;
+    }
+
+    @media screen and (max-width: 990px) and (min-width: 768px) {
+      .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 535px;
+        margin-bottom: 0;
+        list-style: none;
+      }
+      .slick-prev.slick-arrow {
+        display: block;
+        transform: translate(-33px, -70px);
+      }
+      .slick-track {
+        opacity: 1;
+        width: 3180px;
+        transform: translate3d(-477px, 0px, 0px);
+        margin-top: 25px;
+      }
+      .slider-for {
+        width: 700px;
+        height: 438px;
+        margin: 30px auto 1px;
+        overflow: hidden;
+      }
+      #slick-container {
+        width: 100%;
+      }
+      #slick-container img {
+        width: 100%;
+        min-height: 100%;
+        border-radius: 10px;
+      }
+      .slider-nav {
+        width: 700px;
+        height: 130px;
+        margin: auto;
+      }
+      .slider-nav .slick-track {
+        height: 130px;
+      }
+      .slick-arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 50;
+        margin-top: -12px;
+        padding: 70px;
+        border-radius: 20px;
+        border-style: hidden;
+      }
+    }
+    /* responsive para celular  */
+
+    @media screen and (max-width: 768px) and (min-width: 360px) {
+      .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0px;
+        margin-bottom: 0;
+        list-style: none;
+      }
+      .slick-prev.slick-arrow {
+        display: block;
+        transform: translate(-33px, -70px);
+      }
+      .slider-for {
+        width: 100%;
+        height: 90%;
+        margin: 60px auto 1px;
+        overflow: hidden;
+      }
+      .slider-nav {
+        width: 85%;
+        max-height: 121px;
+        margin: -4% auto 0 auto;
+        display: block;
+        transform: translateY(0);
+      }
+      .slick-list {
+        padding: 0px 50px;
+        height: 100%;
+      }
+      #slick-container {
+        width: 100%;
+      }
+      #slick-container img {
+        width: 100%;
+        min-height: 100%;
+      }
+      .slider-nav .slick-track {
+        min-height: 10vh;
+        max-height: 11vh;
+      }
+      .slick-arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 50;
+        margin-top: -12px;
+        padding: 70px;
+        border-radius: 20px;
+        border-style: hidden;
+      }
+    }
+  </style>
+
+  <style>
+    /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+
+    #hide-me {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.61) 0%,
+          rgba(0, 0, 0, 0.15) 100%
+        ),
+        radial-gradient(
+            at top center,
+            rgba(32, 32, 32, 0.815) 0%,
+            rgba(0, 0, 0, 0.685) 120%
+          )
+          #9c9c9c;
+      background-blend-mode: multiply, multiply;
+      display: block;
+      position: fixed;
+      margin: 0;
+      z-index: 100000;
+      -moz-animation: cssAnimation 0s ease-in 10s forwards;
+      /* Firefox */
+      -webkit-animation: cssAnimation 0s ease-in 10s forwards;
+      /* Safari and Chrome */
+      -o-animation: cssAnimation 0s ease-in 10s forwards;
+      /* Opera */
+      animation: cssAnimation 0s ease-in 10s forwards;
+      transition: all 0.5s linear;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      color: white;
+      font-size: 20px;
+    }
+
+    .containerpre,
+    .dot-container {
+      position: relative;
+      width: 100px;
+      height: 100px;
+    }
+
+    .containerpre {
+      transform-origin: center;
+      animation: anirotate 10s linear infinite;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
+      min-height: calc(100vh - 12px);
+    }
+
+    .dot-container {
+      position: absolute;
+      border: 0px solid rgb(207, 100, 13);
+      border-radius: 50px;
+    }
+
+    .dot-container:nth-child(2) {
+      transform: rotate(40deg);
+    }
+
+    .dot-container:nth-child(2) .dot {
+      animation-delay: -0.5s;
+    }
+
+    .dot-container:nth-child(3) {
+      transform: rotate(80deg);
+    }
+
+    .dot-container:nth-child(3) .dot {
+      animation-delay: -1s;
+    }
+
+    .dot {
+      position: absolute;
+      height: 10px;
+      width: 10px;
+      background: rgb(247, 240, 154);
+      border-radius: 5px;
+      transform: translate(0, 0);
+      box-shadow: 5px 5px 50px 5px #fc602c;
+    }
+
+    .dot:nth-child(1) {
+      top: 0;
+      left: calc(50% - 5px);
+      animation: ani1 2s infinite;
+    }
+
+    .dot:nth-child(2) {
+      bottom: calc(28% - 5px);
+      left: calc(11% - 5px);
+      animation: ani2 2s infinite;
+    }
+
+    .dot:nth-child(3) {
+      bottom: calc(28% - 5px);
+      right: calc(11% - 5px);
+      animation: ani3 2s infinite;
+    }
+
+    [hidden] {
+      display: none;
+    }
+
+    @keyframes anirotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(-359deg);
+      }
+    }
+
+    @keyframes ani1 {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(-40px, 67px);
+      }
+    }
+
+    @keyframes ani2 {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(77px, 0);
+      }
+    }
+
+    @keyframes ani3 {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(-39px, -67px);
+      }
+    }
+
+    @keyframes cssAnimation {
+      to {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+      }
+    }
+
+    @-webkit-keyframes cssAnimation {
+      to {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+      }
+    }
+  </style>
+
+  <body>
+    <!-- 
+    <div id="redes">
+        <a href="https://es-la.facebook.com/platzi/" target="_blank"><img src="img/facebook.png" alt=""></a>
+        <a href="https://www.instagram.com/platzi/?hl=es-la" target="_blank"><img src="img/whatsapp.png" alt=""></a>
+        <a href="https://wa.link/jmjdd0" target="_blank"><img src="img/instagram.png" alt=""></a>
+    </div>
+     -->
+
+    <header>
+      <!-- Image and text -->
+
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        data-aos="fade-down"
+        data-aos-offset="650"
+        data-aos-easing="ease-in-sine"
+      >
+        <a
+          class="navbar-brand"
+          href="#block1"
+          style="
+            background: -webkit-linear-gradient(#fff, #d4ab87);
+            text-shadow: 4px 5px 45px rgb(255 233 152 / 39%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+        >
+          <img
+            src="img/logo portafolio.png"
+            width="40"
+            height="40"
+            class="d-inline-block align-top"
+            alt=""
+          />Rodrigo Guzmán
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#block1"
+                >Acerca de mí <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#block4">Habilidades</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Portafolio
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#block6">Edicion de imagen</a>
+                <a
+                  class="dropdown-item"
+                  href="portafoliorodrigo-copia.html#libro-d-p"
+                  target="_blank"
+                  >Manual corporativo y guiones</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="portafoliorodrigo-copia.html#spline62"
+                  target="_blank"
+                  >Animacion</a
+                >
+
+                <a
+                  class="dropdown-item"
+                  href="portafoliorodrigo-copia.html#block14"
+                  target="_blank"
+                  >Maquetacion web</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="portafoliorodrigo-copia.html#block12"
+                  href="portafoliorodrigo-copia.html#block12-1"
+                  href="portafoliorodrigo-copia.html#block12-2"
+                  target="_blank"
+                  >Pintura digital y modelos 3d</a
+                >
+
+                <a
+                  class="dropdown-item"
+                  href="portafoliorodrigo-copia-2.html#spline61"
+                  target="_blank"
+                  >Branding</a
+                >
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="portafoliorodrigo-copia-2.html#spline61-2"
+                target="_blank"
+                >Hobbies</a
+              >
+            </li>
+            <!-- <li class="nav-item">
+                        <a class="nav-link" href="portafoliorodrigo-copia-2.html#block4" target="_blank">Experiencia</a>
+                    </li> -->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="portafoliorodrigo-copia-2.html#contact-us"
+                target="_blank"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div
+        id="block2"
+        data-aos="zoom-in-up"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 iconimg">
+              <a href="#block6" class="iconos"
+                ><img src="img/logos-03.png" alt="" />
+                <span
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  class="tooltip-box"
+                  >Imágenes</span
+                ></a
+              >
+            </div>
+            <div class="col-md-4 iconimg">
+              <a
+                href="portafoliorodrigo-copia.html#spline62"
+                target="_blank"
+                class="iconos"
+                ><img src="img/logos-04.png" alt="" />
+                <span class="tooltip-box">Animaciones</span></a
+              >
+            </div>
+            <div class="col-md-4 iconimg mr">
+              <a
+                href="portafoliorodrigo-copia.html#block12"
+                target="_blank"
+                href="portafoliorodrigo-copia.html#block12-1"
+                href="portafoliorodrigo-copia.html#block12-2"
+                target="_blank"
+                class="iconos"
+                ><img src="img/logos-05.png" alt="" />
+                <span class="tooltip-box">3d</span></a
+              >
+            </div>
+
+            <div class="col-md-4 iconimg">
+              <a href="#block6" class="iconos"
+                ><img src="img/logos-06.png" alt="" />
+                <span class="tooltip-box">Texto</span></a
+              >
+            </div>
+            <div class="col-md-4 iconimg">
+              <a
+                href="portafoliorodrigo-copia.html#spline62"
+                target="_blank"
+                class="iconos"
+                ><img src="img/logos-07.png" alt="" />
+                <span class="tooltip-box">Videos</span></a
+              >
+            </div>
+            <div class="col-md-4 iconimg">
+              <a
+                href="portafoliorodrigo-copia.html#block14"
+                target="_blank"
+                class="iconos"
+                ><img src="img/logos-08.png" alt="" />
+                <span class="tooltip-box">Web</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="block1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 item1" data-aos="fade-right">
+              <img src="img/imagen perfil-02.jpg" alt="" />
+            </div>
+
+            <div class="col-md-4 itemA">
+              <h1>
+                Rodrigo <br />
+                Guzmán
+              </h1>
+            </div>
+
+            <div class="col-md-4 item2">
+              <div>
+                <p>
+                  Soy una persona con conocimientos en la elaboración y
+                  producción de elementos multimediales. Me considero alguien
+                  hábil y perspicaz, capaz de trabajar en equipo; con interés en
+                  dar a conocer mis mejores ideas, así como también en aprender
+                  de todo lo que los demás tienen para ofrecer. Tengo
+                  conocimientos en diferentes áreas, tales como la elaboración y
+                  edición de elementos y proyectos audiovisuales, conocimientos
+                  en marketing, diseño de páginas web, branding, manejo de
+                  cámaras fotográficas e iluminación y pintura digital. También
+                  conozco del uso de las herramientas de la suite de adobe y del
+                  uso de aplicaciones como blender, spline y clip studio paint.
+                  Además de estos conocimientos también está asociado mi gran
+                  interés por aprender y/o desarrollar mejor las habilidades de
+                  las que carezco o que me hace falta por mejorar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div
+        id="block3"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+      >
+        <div class="container">
+          <div
+            class="card mb-6"
+            style="max-width: 1920px; border-radius: 31px; padding-bottom: 10px"
+          >
+            <div class="row no-gutters">
+              <div class="col-md-5">
+                <img src="img/multimedia.jpg" alt="..." />
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h3 class="card-title">Productor de multimedia</h3>
+                  <p class="card-text">
+                    Mediante el manejo de ciertos programas y mi capacidad como
+                    creador de contenidos, podrás ver que puedo llegar a hacer
+                    con el buen uso de elementos multimediales
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="block4">
+        <div class="container">
+          <h4 data-aos="zoom-out">Habilidades</h4>
+          <div class="row">
+            <div
+              class="col-md-8"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="800"
+            >
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="1"
+                  ></li>
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="2"
+                  ></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item pantalla1 active">
+                    <div class="carousel-caption d-none d-md-block">
+                      <div class="row">
+                        <div class="col-4 buttonh">
+                          <div class="list-group" id="list-tab" role="tablist">
+                            <a
+                              class="list-group-item list-group-item-action active"
+                              id="list-aps-list"
+                              data-toggle="list"
+                              href="#list-aps"
+                              role="tab"
+                              aria-controls="aps"
+                            >
+                              Apps
+                            </a>
+
+                            <a
+                              class="list-group-item list-group-item-action"
+                              id="list-home-list"
+                              data-toggle="list"
+                              href="#list-home"
+                              role="tab"
+                              aria-controls="home"
+                            >
+                              Creatividad
+                            </a>
+                            <a
+                              class="list-group-item list-group-item-action"
+                              id="list-profile-list"
+                              data-toggle="list"
+                              href="#list-profile"
+                              role="tab"
+                              aria-controls="profile"
+                              >Mente abierta</a
+                            >
+                            <a
+                              class="list-group-item list-group-item-action"
+                              id="list-settings-list"
+                              data-toggle="list"
+                              href="#list-settings"
+                              role="tab"
+                              aria-controls="settings"
+                              >Curiosidad</a
+                            >
+                          </div>
+                        </div>
+                        <div class="col-8 textd">
+                          <div class="tab-content" id="nav-tabContent">
+                            <div
+                              class="tab-pane fade show active"
+                              id="list-aps"
+                              role="tabpanel"
+                              aria-labelledby="list-aps-list"
+                            >
+                              En el segmento siguiente a este carrusel puedes
+                              ver las aplicaciones que generalmente utilizo
+                            </div>
+
+                            <div
+                              class="tab-pane fade"
+                              id="list-home"
+                              role="tabpanel"
+                              aria-labelledby="list-home-list"
+                            >
+                              Nunca paro de escribir, ilustrar o animar mis
+                              mejores ideas
+                              <img src="img/creatividad-01.png" alt="" />
+                            </div>
+                            <div
+                              class="tab-pane fade"
+                              id="list-profile"
+                              role="tabpanel"
+                              aria-labelledby="list-profile-list"
+                            >
+                              Estoy constantemente aprendiendo sobre la vida<img
+                                src="img/mente-abierta-01.png"
+                                alt=""
+                              />
+                            </div>
+                            <div
+                              class="tab-pane fade"
+                              id="list-settings"
+                              role="tabpanel"
+                              aria-labelledby="list-settings-list"
+                            >
+                              Me gusta aprender sobre lo maravilloso de este
+                              mundo<img src="img/curiosidad-01.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <img
+                      src="img/portfolio.png"
+                      class="d-block w-100 carruselimg1"
+                      alt="..."
+                    />
+                  </div>
+
+                  <div class="carousel-item pantalla2">
+                    <div class="carousel-caption d-none d-md-block">
+                      <div class="row">
+                        <div class="col-4 buttonh">
+                          <div class="list-group" id="list-tab" role="tablist">
+                            <a
+                              class="list-group-item list-group-item-action active"
+                              id="list-1-list"
+                              data-toggle="list"
+                              href="#list-1"
+                              role="tab"
+                              aria-controls="1"
+                              >Liderazgo</a
+                            >
+                            <a
+                              class="list-group-item list-group-item-action"
+                              id="list-3-list"
+                              data-toggle="list"
+                              href="#list-3"
+                              role="tab"
+                              aria-controls="3"
+                              >Amabilidad</a
+                            >
+                            <a
+                              class="list-group-item list-group-item-action"
+                              id="list-4-list"
+                              data-toggle="list"
+                              href="#list-4"
+                              role="tab"
+                              aria-controls="4"
+                              >Evolución</a
+                            >
+                          </div>
+                        </div>
+                        <div class="col-8 textd">
+                          <div class="tab-content" id="nav-tabContent">
+                            <div
+                              class="tab-pane fade show active"
+                              id="list-1"
+                              role="tabpanel"
+                              aria-labelledby="list-1-list"
+                            >
+                              Me gusta estar rodeado e impulsar personas con
+                              grandes metas<img
+                                src="img/liderazgo-01.png"
+                                alt=""
+                              />
+                            </div>
+                            <div
+                              class="tab-pane fade"
+                              id="list-3"
+                              role="tabpanel"
+                              aria-labelledby="list-3-list"
+                            >
+                              Soy amable con la vida en general<img
+                                src="img/amabilidad-01.png"
+                                alt=""
+                              />
+                            </div>
+                            <div
+                              class="tab-pane fade"
+                              id="list-4"
+                              role="tabpanel"
+                              aria-labelledby="list-4-list"
+                            >
+                              Estoy buscando e investigando constantemente sobre
+                              los aprendizajes que puedo mejorar<img
+                                src="img/evolucion-01.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <img
+                      src="img/portfolio.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+
+                  <div class="carousel-item pantalla3">
+                    <div class="carousel-caption d-none d-md-block">
+                      <div class="row">
+                        <div class="col-4 buttonh">
+                          <div class="list-group" id="list-tab" role="tablist">
+                            <a
+                              class="list-group-item list-group-item-action active"
+                              id="list-5-list"
+                              data-toggle="list"
+                              href="#list-5"
+                              role="tab"
+                              aria-controls="5"
+                              >Comunicación</a
+                            >
+                            <a
+                              class="list-group-item list-group-item-action"
+                              id="list-6-list"
+                              data-toggle="list"
+                              href="#list-6"
+                              role="tab"
+                              aria-controls="6"
+                              >Impulso</a
+                            >
+                            <a
+                              class="list-group-item list-group-item-action"
+                              id="list-7-list"
+                              data-toggle="list"
+                              href="#list-7"
+                              role="tab"
+                              aria-controls="7"
+                              >Innovador</a
+                            >
+                            <a
+                              class="list-group-item list-group-item-action"
+                              id="list-8-list"
+                              data-toggle="list"
+                              href="#list-8"
+                              role="tab"
+                              aria-controls="8"
+                              >Cumplimiento</a
+                            >
+                          </div>
+                        </div>
+                        <div class="col-8 textd">
+                          <div class="tab-content" id="nav-tabContent">
+                            <div
+                              class="tab-pane fade show active"
+                              id="list-5"
+                              role="tabpanel"
+                              aria-labelledby="list-5-list"
+                            >
+                              Soy bueno llegando a acuerdos y comunicándome con
+                              varias personas<img
+                                src="img/comunicacion.png"
+                                alt=""
+                              />
+                            </div>
+                            <div
+                              class="tab-pane fade"
+                              id="list-6"
+                              role="tabpanel"
+                              aria-labelledby="list-6-list"
+                            >
+                              Siempre quiero llegar a hacer lo mejor que
+                              puedo<img src="img/impulso-01.png" alt="" />
+                            </div>
+                            <div
+                              class="tab-pane fade"
+                              id="list-7"
+                              role="tabpanel"
+                              aria-labelledby="list-7-list"
+                            >
+                              Utilizo herramientas nuevas, hechas por personas
+                              muy creativas que apoyan el ámbito creativo<img
+                                src="img/innovador-01.png"
+                                alt=""
+                              />
+                            </div>
+                            <div
+                              class="tab-pane fade"
+                              id="list-8"
+                              role="tabpanel"
+                              aria-labelledby="list-8-list"
+                            >
+                              Soy cumplido en la entrega de trabajos y si no lo
+                              puedo lograr lo hago saber<img
+                                src="img/cumplimiento-01.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <img
+                      src="img/portfolio.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+
+                <a
+                  class="carousel-control-prev arrowsci"
+                  href="#carouselExampleIndicators"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselExampleIndicators"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="col-sm-4 apps"
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+            >
+              <img src="img/aplicaciones.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="block6"
+        style="border-radius: 0px 100px 0px 0px"
+        data-aos="fade-right"
+        data-aos-easing="linear"
+        data-aos-duration="300"
+      >
+        <div class="container">
+          <h4>Edición de imagen</h4>
+          <p>
+            Las siguientes imágenes han sido modificadas mediante la aplicación
+            de ajustes, filtros, selecciones, transformaciones e implementación
+            de texto con la aplicación de Photoshop. A continuación puedes ver
+            un carousel con mis mejores trabajos y seguido a este todos los
+            trabajos por secciones.
+          </p>
+        </div>
+      </div>
+
+      <div id="slick-container">
+        <div class="slider-for">
+          <div class="item">
+            <img src="img/milogo.png" alt="image" draggable="false" />
+            <span class="img-slick-info">
+              <h4 style="font-size: 16px">Logo personal</h4>
+              <p style="font-size: 13px">
+                Este lo puedes encontrar en varias partes de mi pagina web, es
+                un elemento realizado en illustrator con efecto 3d
+              </p>
+              <!-- <a class="mas-info" href=""><img src="img/enlace.png" alt=""></a> -->
+            </span>
+          </div>
+
+          <div class="item">
+            <img src="img/tentaculos1.png" alt="image" draggable="false" />
+            <span class="img-slick-info"
+              ><h4 style="font-size: 16px">Tentáculos</h4>
+              <p style="font-size: 13px">
+                Elementos hechos en illustrator para uso en manual de identidad
+              </p>
+              <!-- <a class="mas-info" href=""><img src="img/enlace.png" alt=""></a> -->
+            </span>
+          </div>
+
+          <div class="item">
+            <img src="img/tiempoaltiempo.png" alt="image" draggable="false" />
+            <span class="img-slick-info"
+              ><h4 style="font-size: 16px">
+                Portada canción "tiempo al tiempo" de Dharma y flora
+              </h4>
+              <p style="font-size: 13px">
+                Elemento realizado en photoshop e illustrator
+              </p>
+              <!-- <a class="mas-info" href=""><img src="img/enlace.png" alt=""></a> -->
+            </span>
+          </div>
+
+          <div class="item">
+            <img src="img/multimedia.jpg" alt="image" draggable="false" />
+            <span class="img-slick-info"
+              ><h4 style="font-size: 16px">Banner de multimedia</h4>
+              <p style="font-size: 13px">
+                Elemento realizado en photoshop, aplicando selecciones y efectos
+                dentro de photoshop
+              </p>
+              <!-- <a class="mas-info" href=""><img src="img/enlace.png" alt=""></a> -->
+            </span>
+          </div>
+
+          <div class="item">
+            <img src="img/helado5.JPG" alt="image" draggable="false" />
+            <span class="img-slick-info"
+              ><h4 style="font-size: 16px">Fotoproducto helados</h4>
+              <p style="font-size: 13px">
+                Uso de camaras fotograficas, composición, iluminacion y hacks de
+                fotografia (helado falso, labial en fresas) y revelado de imagen
+              </p>
+              <!-- <a class="mas-info" href=""><img src="img/enlace.png" alt=""></a> -->
+            </span>
+          </div>
+
+          <div class="item">
+            <img src="img/helados-7.JPG" alt="image" draggable="false" />
+            <span class="img-slick-info"
+              ><h4 style="font-size: 16px">Fotoproducto helados</h4>
+              <p style="font-size: 13px">
+                Uso de camaras fotograficas, composición, iluminacion y hacks de
+                fotografia (helado falso, labial en fresas) y revelado de imagen
+              </p>
+              <!-- <a class="mas-info" href=""><img src="img/enlace.png" alt=""></a> -->
+            </span>
+          </div>
+
+          <div class="item">
+            <img src="img/johansentado.JPG" alt="image" draggable="false" />
+            <span class="img-slick-info"
+              ><h4 style="font-size: 16px">Luz frontal</h4>
+              <p style="font-size: 13px">
+                Uso de camaras fotograficas, composición, iluminación y revelado
+                de imagen
+              </p>
+              <!-- <a class="mas-info" href=""><img src="img/enlace.png" alt=""></a> -->
+            </span>
+          </div>
+
+          <div class="item">
+            <img src="img/pattern.JPG" alt="image" draggable="false" />
+            <span class="img-slick-info"
+              ><h4 style="font-size: 16px">Patrón</h4>
+              <p style="font-size: 13px">
+                Uso de camaras fotograficas, composición, iluminación y revelado
+                de imagen
+              </p>
+              <!-- <a class="mas-info" href=""><img src="img/enlace.png" alt=""></a> -->
+            </span>
+          </div>
+
+          <div class="item">
+            <img src="img/renderlogo1.png" alt="image" draggable="false" />
+            <span class="img-slick-info"
+              ><h4 style="font-size: 16px">Render logo</h4>
+              <p style="font-size: 13px">
+                Elemento en 3d hecho en blender con algunos elementos de luces
+                de neón
+              </p>
+              <!-- <a class="mas-info" href=""><img src="img/enlace.png" alt=""></a> -->
+            </span>
+          </div>
+
+          <div class="item">
+            <img
+              src="img/3erorenderblender.png"
+              alt="image"
+              draggable="false"
+            />
+            <span class="img-slick-info"
+              ><h4 style="font-size: 16px">Render personaje</h4>
+              <p style="font-size: 13px">
+                Personaje en 3d hecho en blender texturizado con pintura digital
+              </p>
+              <!-- <a class="mas-info" href=""><img src="img/enlace.png" alt=""></a> -->
+            </span>
+          </div>
+        </div>
+
+        <div class="slider-nav">
+          <div class="item">
+            <img src="img/milogo.png" alt="image" draggable="false" />
+          </div>
+
+          <div class="item">
+            <img src="img/tentaculos1.png" alt="image" draggable="false" />
+          </div>
+
+          <div class="item">
+            <img src="img/tiempoaltiempo.png" alt="image" draggable="false" />
+          </div>
+
+          <div class="item">
+            <img src="img/multimedia.jpg" alt="image" draggable="false" />
+          </div>
+
+          <div class="item">
+            <img src="img/helado5.JPG" alt="image" draggable="false" />
+          </div>
+
+          <div class="item">
+            <img src="img/helados-7.JPG" alt="image" draggable="false" />
+          </div>
+
+          <div class="item">
+            <img src="img/johansentado.JPG" alt="image" draggable="false" />
+          </div>
+
+          <div class="item">
+            <img src="img/pattern.JPG" alt="image" draggable="false" />
+          </div>
+
+          <div class="item">
+            <img src="img/renderlogo1.png" alt="image" draggable="false" />
+          </div>
+
+          <div class="item">
+            <img
+              src="img/3erorenderblender.png"
+              alt="image"
+              draggable="false"
+            />
+          </div>
+        </div>
+      </div>
+
+      <section id="portfolio" class="portfolio index1">
+        <div class="container">
+          <!-- <div class="section-title" data-aos="fade-up">
+                </div> -->
+
+          <div class="row" data-aos="fade-up">
+            <div class="col-lg-12">
+              <ul id="portfolio-flters">
+                <li data-filter=".filter-vectores">Elementos vectoriales</li>
+                <li data-filter=".filter-edit-ph">
+                  Imagenes editadas y montajes
+                </li>
+                <li data-filter=".filter-fotoproducto">Fotoproducto</li>
+                <li data-filter=".filter-composicion">Composición</li>
+
+                <li data-filter=".filter-renders">Renders</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row portfolio-container">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-vectores">
+              <div class="portfolio-wrap">
+                <img src="img/milogo.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/milogo.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="App 2"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Logo personal</h4>
+                  <p>
+                    Este lo puedes encontrar en varias partes de mi pagina web,
+                    es un elemento realizado en illustrator con efecto 3d
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-vectores">
+              <div class="portfolio-wrap">
+                <img src="img/reticulas-kks.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/reticulas-kks-1.jpg"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="App 1"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Retículas para logo - Krart ken studios</h4>
+                  <p>Propuestas para elección de logo de proyecto</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-vectores">
+              <div class="portfolio-wrap">
+                <img src="img/flyer1.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/flyer.jpg"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="App 2"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Flyer</h4>
+                  <p>Flyer hecho con colores monocromaticos</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-vectores">
+              <div class="portfolio-wrap">
+                <img src="img/cartas-martina1.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/cartas-martina.jpg"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="App 2"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Cartas martina 1 (tranquila)</h4>
+                  <p>
+                    Elemento hecho con elementos de illustrator (Símbolos,
+                    textos, trazados de pincel, etc)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-vectores">
+              <div class="portfolio-wrap">
+                <img src="img/nannaFIN1.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/nannaFIN.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 1"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Calígrama</h4>
+                  <p>
+                    Elemento hecho referenciado de Nanna Brindis, cantautora de
+                    el grupo Of Monsters And Men
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-vectores">
+              <div class="portfolio-wrap">
+                <img src="img/tentaculos21.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/tentaculos2.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="App 2"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Tentáculos 2</h4>
+                  <p>
+                    Elementos hechos en illustrator para uso en manual de
+                    identidad
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-vectores">
+              <div class="portfolio-wrap">
+                <img
+                  src="img/isologo recreado_Mesa de trabajo 11.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <a
+                    href="img/isologo recreado_Mesa de trabajo 1.jpg"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="App 2"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Isologo de starbucks recreado</h4>
+                  <p>Propuesta de nueva identidad para el logo de starbucks</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-edit-ph">
+              <div class="portfolio-wrap">
+                <img
+                  src="img/5premonition poster1.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <a
+                    href="img/5premonition poster.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 2"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Poster de película "Premonición"</h4>
+                  <p>Elemento realizado con photoshop e illustrator</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-edit-ph">
+              <div class="portfolio-wrap">
+                <img
+                  src="img/restauracic3b3n_01-Recuperado1.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <a
+                    href="img/restauracic3b3n_01-Recuperado.jpg"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 2"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Edicion de imagen con tampón</h4>
+                  <p>
+                    Elemento arreglado usando el tampón de clonación de
+                    photoshop e implementando colores
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-edit-ph">
+              <div class="portfolio-wrap">
+                <img src="img/tiempoaltiempo1.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/tiempoaltiempo.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 2"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Portada canción "tiempo al tiempo" de Dharma y flora</h4>
+                  <p>Elemento realizado en photoshop e illustrator</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-edit-ph">
+              <div class="portfolio-wrap">
+                <img
+                  src="img/edicion-de-imagen-21.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <a
+                    href="img/edicion-de-imagen-2.jpg"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 2"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Edición de imagen</h4>
+                  <p>Elemento hecho utilizando ajustes de imagen</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-edit-ph">
+              <div class="portfolio-wrap">
+                <img
+                  src="img/edicion-de-imagen-31.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <a
+                    href="img/edicion-de-imagen-3.jpg"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 2"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Edición de imagen</h4>
+                  <p>Elemento hecho utilizando ajustes de imagen</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-edit-ph">
+              <div class="portfolio-wrap">
+                <img src="img/restauracion1.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/restauracion.jpg"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 2"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Edicion de imagen con tampón</h4>
+                  <p>
+                    Elemento arreglado usando el tampón de clonación de
+                    photoshop
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-edit-ph">
+              <div class="portfolio-wrap">
+                <img
+                  src="img/porsche_classic_car_racing_gt_germany11.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <a
+                    href="img/porsche_classic_car_racing_gt_germany1.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 2"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Edición de imagen</h4>
+                  <p>Elemento hecho utilizando ajustes de imagen</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-edit-ph">
+              <div class="portfolio-wrap">
+                <img
+                  src="img/wescott-street-signjpg-a0c3a9655584f3031.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <a
+                    href="img/wescott-street-signjpg-a0c3a9655584f303.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 2"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Edición de imagen</h4>
+                  <p>Elemento hecho utilizando ajustes de imagen</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-edit-ph">
+              <div class="portfolio-wrap">
+                <img src="img/PLANET ONE1.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/PLANET ONE.jpg"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 2"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Portada Planet one</h4>
+                  <p>
+                    Elemento realizado en photoshop e illustrator
+                    (posteriormente animado en after effects)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-edit-ph">
+              <div class="portfolio-wrap">
+                <img src="img/PELO-MUCHACHA1.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/PELO-MUCHACHA.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 2"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Edición de imagen</h4>
+                  <p>
+                    Elemento hecho utilizando ajustes de imagen y selecciones
+                    para el pelo de la modelo
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-edit-ph">
+              <div class="portfolio-wrap">
+                <img src="img/multimedia1.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/multimedia.jpg"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 2"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Banner de multimedia</h4>
+                  <p>
+                    Elemento realizado en photoshop, aplicando selecciones y
+                    efectos dentro de photoshop
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-edit-ph">
+              <div class="portfolio-wrap">
+                <img
+                  src="img/locacion-libreria1.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <a
+                    href="img/locacion-libreria.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 2"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Diseño de local de libros</h4>
+                  <p>
+                    Elemento realizado mediante la importación y edición
+                    mediante selecciones de los elementos
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-edit-ph">
+              <div class="portfolio-wrap">
+                <img
+                  src="img/edicion-de-imagen-61.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <a
+                    href="img/edicion-de-imagen-6.jpg"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 2"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Edición de imagen</h4>
+                  <p>Elemento hecho utilizando ajustes de imagen</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-edit-ph">
+              <div class="portfolio-wrap">
+                <img src="img/desierto1.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/desierto.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 2"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Edición de imagen</h4>
+                  <p>Elemento hecho utilizando ajustes de imagen</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-fotoproducto">
+              <div class="portfolio-wrap">
+                <img src="img/helado21.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/helado2.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Web 3"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Fotoproducto helados</h4>
+                  <p>
+                    Uso de camaras fotograficas, composición, iluminacion y
+                    hacks de fotografia (helado falso, labial en fresas) y
+                    revelado de imagen
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-fotoproducto">
+              <div class="portfolio-wrap">
+                <img src="img/helado31.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/helado3.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Web 3"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Fotoproducto helados</h4>
+                  <p>
+                    Uso de camaras fotograficas, composición, iluminacion y
+                    hacks de fotografia (helado falso, labial en fresas) y
+                    revelado de imagen
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-fotoproducto">
+              <div class="portfolio-wrap">
+                <img src="img/helado51.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/helado5.JPG"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Web 3"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Fotoproducto helados</h4>
+                  <p>
+                    Uso de camaras fotograficas, composición, iluminacion y
+                    hacks de fotografia (helado falso, labial en fresas) y
+                    revelado de imagen
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-fotoproducto">
+              <div class="portfolio-wrap">
+                <img src="img/helado61.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/helado6.JPG"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Web 3"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Fotoproducto helados</h4>
+                  <p>
+                    Uso de camaras fotograficas, composición, iluminacion y
+                    hacks de fotografia (helado falso, labial en fresas) y
+                    revelado de imagen
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-fotoproducto">
+              <div class="portfolio-wrap">
+                <img src="img/helados81.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/helados8.JPG"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Web 3"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Fotoproducto helados</h4>
+                  <p>
+                    Uso de camaras fotograficas, composición, iluminación y
+                    hacks de fotografia (helado falso, labial en fresas) y
+                    revelado de imagen
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-composicion">
+              <div class="portfolio-wrap">
+                <img src="img/lightpicado1.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/lightpicado.JPG"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 1"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Luz picada</h4>
+                  <p>
+                    Uso de camaras fotograficas, composición, iluminación y
+                    revelado de imagen
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-composicion">
+              <div class="portfolio-wrap">
+                <img src="img/lightpaint1.JPG" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/lightpaint.JPG"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 1"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Lightpaint</h4>
+                  <p>
+                    Uso de camaras fotograficas, composición, iluminación y
+                    revelado de imagen
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            ----
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-composicion">
+              <div class="portfolio-wrap">
+                <img src="img/johanfoto11.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/johanfoto1.JPG"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 1"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Johan Fotógrafo</h4>
+                  <p>
+                    Uso de camaras fotograficas, composición, iluminación y
+                    revelado de imagen
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            ---- ----
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-composicion">
+              <div class="portfolio-wrap">
+                <img src="img/detras21.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/detras2.JPG"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 1"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Luz lateral</h4>
+                  <p>
+                    Uso de camaras fotograficas, composición, iluminación y
+                    revelado de imagen
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            ---- ----- -------
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-composicion">
+              <div class="portfolio-wrap">
+                <img src="img/santiago11.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/santiago1.JPG"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 1"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Luz lateral</h4>
+                  <p>
+                    Uso de camaras fotograficas, composición, iluminación y
+                    revelado de imagen
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            -----
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-composicion">
+              <div class="portfolio-wrap">
+                <img src="img/johansentado1.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/johansentado.JPG"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 1"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Luz frontal</h4>
+                  <p>
+                    Uso de camaras fotograficas, composición, iluminación y
+                    revelado de imagen
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            ------- --------
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-composicion">
+              <div class="portfolio-wrap">
+                <img src="img/light-behind1.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/light-behind.JPG"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 1"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Luz detrás</h4>
+                  <p>
+                    Uso de camaras fotograficas, composición, iluminación y
+                    revelado de imagen
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            ------- ------- -------- --------
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-composicion">
+              <div class="portfolio-wrap">
+                <img src="img/pattern-31.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/pattern-3.JPG"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 1"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Patrón</h4>
+                  <p>
+                    Uso de camaras fotograficas, composición, iluminación y
+                    revelado de imagen
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-composicion">
+              <div class="portfolio-wrap">
+                <img src="img/johan-ojo1.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/johan-ojo.JPG"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 1"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Ojo</h4>
+                  <p>
+                    Uso de camaras fotograficas, composición, iluminación y
+                    revelado de imagen
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            ----- ----
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-composicion">
+              <div class="portfolio-wrap">
+                <img src="img/story11.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/story1.JPG"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 1"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Foto historia</h4>
+                  <p>
+                    Uso de camaras fotograficas, composición, iluminación y
+                    revelado de imagen
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            ----- ----- ------
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-composicion">
+              <div class="portfolio-wrap">
+                <img src="img/mov-johan21.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/mov-johan2.JPG"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 1"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Movimiento congelado</h4>
+                  <p>
+                    Uso de camaras fotograficas, composición, iluminación y
+                    revelado de imagen
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-composicion">
+              <div class="portfolio-wrap">
+                <img src="img/light-side1.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/light-side.JPG"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 1"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Luz lateral</h4>
+                  <p>
+                    Uso de camaras fotograficas, composición, iluminación y
+                    revelado de imagen
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            -------
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-renders">
+              <div class="portfolio-wrap">
+                <img src="img/renderlogo11.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/renderlogo1.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 1"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Render logo</h4>
+                  <p>
+                    Elemento en 3d hecho en blender con algunos elementos de
+                    luces de neón
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-renders">
+              <div class="portfolio-wrap">
+                <img
+                  src="img/Untitled@1-822x6261.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <a
+                    href="img/Untitled@1-822x626.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 1"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Render elemento web</h4>
+                  <p>Elemento 3d realizado en spline</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-renders">
+              <div class="portfolio-wrap">
+                <img src="img/cortadondvb1.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    href="img/cortadondvb.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 1"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Render logo</h4>
+                  <p>
+                    Elemento en 3d hecho en blender con algunos elementos de
+                    luces de neón
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-renders">
+              <div class="portfolio-wrap">
+                <img
+                  src="img/3erorenderblender1.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <a
+                    href="img/3erorenderblender.png"
+                    data-gall="portfolioGallery"
+                    class="venobox"
+                    title="Card 1"
+                    ><i class="icofont-plus-circle"></i
+                  ></a>
+                  <!-- <a href="./portfolio-details.html" title="More Details" target="_blank"><i class="icofont-link"></i></a> -->
+                </div>
+                <div class="portfolio-info">
+                  <h4>Render personaje</h4>
+                  <p>
+                    Personaje en 3d hecho en blender texturizado con pintura
+                    digital
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+    </main>
+
+    <footer id="footer">
+      <div id="block9-1-2">
+        <div class="container">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <!-- <li class="page-item"><a class="page-link" href="#">Previous</a></li> -->
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item">
+                <a
+                  class="page-link"
+                  target="_blank"
+                  href="portafoliorodrigo-copia.html"
+                  >2</a
+                >
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link"
+                  target="_blank"
+                  href="portafoliorodrigo-copia-2.html"
+                  >3</a
+                >
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link"
+                  target="_blank"
+                  href="portafoliorodrigo-copia.html"
+                  >Next</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 footer-links">
+              <h4>Mis redes sociales</h4>
+              <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
+              <div class="social-links mt-3">
+                <a
+                  href="https://www.pinterest.at/rodrigoandresgm20/_saved/"
+                  target="_blank"
+                  class="twitter"
+                  ><i class="bx bxl-pinterest"></i
+                ></a>
+                <a
+                  href="https://www.deviantart.com/ragm924"
+                  target="_blank"
+                  class="facebook"
+                  ><i class="bx bxl-deviantart"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/ray.ec98/?hl=es-la"
+                  target="_blank"
+                  class="instagram"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a
+                  href="https://www.behance.net/rodrigoguzman7"
+                  target="_blank"
+                  class="artstation"
+                  ><i class="bx bxl-behance"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/andr%C3%A9s-guzman-5043371a8/"
+                  target="_blank"
+                  class="linkedin"
+                  ><i class="bx bxl-linkedin"></i
+                ></a>
+
+                <div id="whatsapp">
+                  <a href="https://wa.link/ecuymb" target="_blank"
+                    ><img src="img/whatsapp.png" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write('<script src="js/jquery.slim.min.js"><\/script>');
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/index.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script>
+      lightGallery(document.querySelector(".gallery"));
+    </script>
+
+    <!-- <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script src="./vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="./vendor/php-email-form/validate.js"></script>
+    <script src="./vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="./vendor/venobox/venobox.min.js"></script>
+    <script src="./vendor/owl.carousel/owl.carousel.min.js"></script>
+
+    <script src="./vendor/aos/aos.js"></script>
+
+    <script src="./js/main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script src="js/slick.min.js" type="text/javascript"></script>
+    <script src="js/slick.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      $(document).on("ready", function () {
+        $(".vertical-center-4").slick({
+          dots: true,
+          vertical: true,
+          centerMode: true,
+          slidesToShow: 4,
+          slidesToScroll: 2,
+        });
+        $(".vertical-center-3").slick({
+          dots: true,
+          vertical: true,
+          centerMode: true,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        });
+        $(".vertical-center-2").slick({
+          dots: true,
+          vertical: true,
+          centerMode: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        });
+        $(".vertical-center").slick({
+          dots: true,
+          vertical: true,
+          centerMode: true,
+        });
+        $(".vertical").slick({
+          dots: true,
+          vertical: true,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        });
+        $(".regular").slick({
+          dots: true,
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        });
+        $(".center").slick({
+          dots: true,
+          infinite: true,
+          centerMode: true,
+          slidesToShow: 5,
+          slidesToScroll: 3,
+        });
+        $(".variable").slick({
+          dots: true,
+          infinite: true,
+          variableWidth: true,
+        });
+        $(".lazy").slick({
+          lazyLoad: "ondemand", // ondemand progressive anticipated
+          infinite: true,
+        });
+        $(".slider-for").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: true,
+          asNavFor: ".slider-nav",
+        });
+        $(".slider-nav").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          asNavFor: ".slider-for",
+          dots: true,
+          centerMode: true,
+          focusOnSelect: true,
+        });
+      });
+    </script>
+  </body>
+</html>
